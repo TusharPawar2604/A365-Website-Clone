@@ -1,0 +1,603 @@
+@font-face {
+    font-family: first;
+    src: url(./FoundersGroteskWeb-Regular.woff2);
+}
+@font-face {
+    font-family: second;
+    src: url(./SaolDisplay-Regular.ttf);
+}
+@font-face {
+    font-family: third;
+    src: url(./SaolDisplay-Regular.otf);
+}
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html,body{
+   height: 100%;
+   width: 100%;
+}
+#page1{
+    min-height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    color: white;
+    z-index: 99999999;
+    /* background-color: rgba(255, 255, 255, 0.038); */
+    padding: 3vw 4vw;
+    mix-blend-mode: difference;
+   
+}
+nav svg{
+    height: 2.5vw;
+    color: rgb(0, 0, 0);
+    mix-blend-mode: difference;
+    fill: white ;
+}
+.nav-part2{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+/* font-weight: 100; */
+  
+}
+.nav-part2 h3{
+    font-family: Founders Grotesk Regular;
+   font-weight: 200;
+   font-size: 1.5vw;
+   cursor: pointer;
+}
+#center-video{
+    height: 80vh;
+    margin-top: 3vw;
+    width: 80%;
+}
+#center-video video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#page1 i{
+    font-size: 3.5vw;
+    font-weight: 100;
+    animation-name: jhula;
+    animation-duration:0.59s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes jhula {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(1.3vw);
+    }
+}
+#text-div{
+margin-top: 7vw;
+margin-bottom: 3vw;
+}
+#text-div h2{
+   text-align: center;
+   font-family: Founders Grotesk Regular;
+   font-size: 3.5vw;
+   font-weight: 200;
+   line-height: 7.5vh;
+}
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10vw 8vw;
+}
+#pehla-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+#pehla-text h2{
+    width: 85%;
+    font-size: 2vw;
+   font-family: Founders Grotesk Regular;
+font-weight: 200;
+}
+#page2-text{
+   display: flex;
+    align-items: center;
+}
+#page2-text h1{
+   font-size: 12vw;
+   font-family: second;
+   font-weight: 500;
+}
+#pehla-text h4{
+    font-family: Founders Grotesk Regular;
+   font-weight: 300;
+   font-size: 1.5vw;
+}
+#pehla-text h4 i{ 
+    margin-right: 1vw;
+}
+#one-video{
+    height: 65vh;
+    overflow: hidden;
+    width: 25vw;
+    position: relative;
+    top: 15vw;
+}
+#two-video{
+    height: 70vh;
+    width: 45vw;
+}
+#first-video{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+#first-video video{
+    height: 90%;
+    width: 100%;
+    transition: all ease-in-out 0.5s;
+    object-fit: cover;
+    z-index: 2;
+}
+#first-video h2{
+    font-family: Founders Grotesk Regular;
+    font-weight: 100;
+    transition: all ease-in-out 0.5s;
+    margin-top: 1vw;
+    opacity: 0;
+}
+#first-video h2 i{
+    font-size: 1vw;
+}
+#two-video:hover video{
+    scale: 1.025;
+}
+#two-video:hover h2{
+    opacity: 1;
+}
+#one-video:hover video{
+    scale: 1.025;
+}
+#one-video:hover h2{
+    opacity: 1;
+}
+#left-video{
+height: 45vh;
+width: 30vw;
+/* background-color: rgb(82, 82, 82); */
+}
+#right-video{
+    height: 80vh;
+    width: 30vw;
+}
+#second-video{
+    height: 80vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-in-out 0.5s;
+    gap: 8vw;
+    position: relative;
+    margin-top: 20vw;
+}
+#second-video video{
+    height: 90%;
+    width: 100%;
+    transition: all ease-in-out 0.5s;
+    object-fit: cover;
+}
+#second-video h2{
+    font-family: Founders Grotesk Regular;
+    font-weight: 100;
+    transition: all ease-in-out 0.5s;
+    margin-top: 1vw;
+    opacity: 0;
+}
+#left-video:hover h2{
+    opacity: 1;
+}
+#left-video:hover video{
+    scale: 1.025;
+}
+#right-video:hover h2{
+    opacity: 1;
+}
+#right-video:hover video{
+    scale: 1.025;
+}
+#third-video{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-in-out 0.5s;
+    gap: 5vw;
+    position: relative;
+    margin-top: 5vw;
+}
+#ek-video{
+    height: 75vh;
+    width: 50vw;
+    /* background-color: rgb(82, 82, 82); */
+    }
+    #do-video{
+        height: 40vh;
+        width: 25vw;
+    }
+    #third-video video{
+        height: 90%;
+        width: 100%;
+        transition: all ease-in-out 0.5s;
+        object-fit: cover;
+    }
+    #ek-video img{
+        height: 100%;
+        width: 100%;
+        transition: all ease-in-out 0.5s;
+        object-fit: cover;
+    }
+    #third-video h2{
+        font-family: Founders Grotesk Regular;
+        font-weight: 100;
+        transition: all ease-in-out 0.5s;
+        margin-top: 1vw;
+        opacity: 0;
+    }
+    #ek-video:hover img{
+        scale: 1.025;
+    }
+    #do-video:hover video{
+        scale: 1.025;
+    }
+    #ek-video:hover h2{
+        opacity: 1;
+    }
+    #do-video:hover h2{
+        opacity: 1;
+    }
+    #button{
+        place-items: center;
+        display: grid;
+    }
+    #button button{
+        padding: 1.2vw 4vw;
+        border-radius: 50px;
+        font-size: 1vw;
+        margin-top: 2vw;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+        outline: none;
+    }
+    #button  button span{
+        z-index: 9999;
+        /* color: black; */
+    }
+    button::before{
+        content: "";
+        transition: all ease 0.5s;
+        height: 100%;
+        width: 100%;
+        border-radius: 50px;
+        z-index: 1;
+        left: -100%;
+        position: absolute;
+        top: 0;
+    }
+    button:hover button span {
+        color: black;
+        z-index: 999;
+    }
+    button:hover::before{
+        left: 0;
+        background-color: white;
+}
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(178, 178, 178);
+    padding: 5vw 5vw;
+}
+#about-first-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+  
+}
+#about-first{
+height: 85vh;
+width: 40vw;
+}
+#about-second{
+    height: 85vh;
+    width: 33vw;
+}
+#about-second img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#about-first h1{
+    font-size: 10vw;
+    font-family: second;
+    font-weight: 100;
+}
+#about-first p{
+        font-family: Founders Grotesk Regular;
+        font-size: 1.5vw;
+        margin-top: 2vw;
+}
+#about-first p i{
+    font-size: 1.1vw;
+    margin-right: 1.5vw;
+}
+#about-first h3{
+    font-family: Founders Grotesk Regular;
+    font-size: 2vw;
+    font-weight: 100;
+    margin-top: 3vw;
+}
+#about-first button{
+    padding: 1vw 4vw;
+    border-radius: 50px;
+    font-size: 1.2vw;
+    margin-top: 3vw;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    background: transparent;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    outline: none;
+}
+#about-second-div{
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    margin-top: 5vw;
+    gap: 12vw;
+    justify-content: center;
+    align-items: center;
+}
+#pehla-about{
+    height: 50vh;
+    width: 30vw;
+    background-color: red;
+}
+#dusra-about h3{
+    font-family: Founders Grotesk Regular;
+font-weight: 500;
+font-size: 1.5vw;
+margin-top: 2vw;
+}
+#dusra-about{
+width: 35%;
+}
+#pehla-about img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#page4{
+    
+    min-height: 90vh;
+    width: 100%;
+    background-color: white;
+    padding: 7vw 8vw;
+}
+#page4-logo{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    justify-content: center;
+    margin-top: 7vw;
+}
+#logo-images{
+    height: 20vh;
+    width: 18vw;
+}
+#logo-images img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+#page4 h1{
+    font-family: Founders Grotesk Regular;
+    margin-left: 4vw;
+    font-weight: 300;
+    font-size: 3.5vw;
+    line-height: 8vh;
+}#page5{
+    height: 150vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+}
+#one-photo{
+ position: absolute ;
+ left: 20%;
+ top: 30%;
+ /* top: 1vw; */
+}
+#two-photo{
+    position: absolute;
+    top: 10%;
+left: 35%;
+height:50vw;
+}
+#three-photo{
+    position: absolute;
+    height: 20vw;
+    top: 5vw;
+    right: 10%;
+}
+#four-photo{
+    position: absolute;
+    height: 30vw;
+    top: 70%;
+    left: 7%;
+}
+#five-photo{
+    position: absolute;
+    height: 35vw;
+    top: 70%;
+    right: 2%;
+}
+#page6{
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding-top: 5vw;
+    text-align: center;
+    padding-bottom: 7vw;
+}
+#page6 h1{
+    font-size: 12vw;
+    font-weight: 300;
+    margin-bottom: 2vw;
+}
+#page6 p{
+    margin-bottom: 3vw;
+    font-size: 1.55vw;
+}
+#page6 h3{
+    font-family: Founders Grotesk Regular;
+font-weight: 100;
+font-size: 1.65vw;
+margin-bottom: 3vw;
+}
+#page6 h4{
+    font-family: Founders Grotesk Regular;
+    font-size: 2vw;
+    font-weight: 100;
+   margin-bottom: 1.5vw;
+}
+#page6 button{
+    padding: 1vw 4vw;
+    border-radius: 50px;
+    font-size: 1.2vw;
+    margin-top: 1.5vw;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    outline: none;
+}
+#page7{
+    min-height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 8vw;
+    border-bottom: 2px solid gray;
+}
+#page7 h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12vw;
+    font-weight: 500;
+    font-family: second;
+    line-height: 25vh;
+}
+#page7 button{
+    padding: 1vw 4vw;
+    border-radius: 50px;
+    font-size: 1.2vw;
+    margin-top: 5vw;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    background: transparent;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    outline: none;
+}
+#page8{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+footer{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    /* background-color: red; */
+}
+footer h2{
+    font-family: Founders Grotesk Regular;
+    font-weight: 100;
+    font-size: 1.55vw;
+}
+
+
+
+#moving-div{
+    /* background-color: red; */
+   white-space: nowrap;
+    bottom: 5%;
+    width: 100%;
+    /* background-color: red   ; */
+    /* background: linear-gradient(to right, rgba(255, 166, 0, 0.496),rgba(255, 255, 0, 0.468),lightgreen,rgb(224, 224, 151),black); */
+    backdrop-filter: blur(10px);
+    padding: 2.5vw;
+    overflow: hidden;
+    background: black;
+    color: white;
+}
+#moving-div .move{
+   display: flex;
+   animation-name: move;
+   animation-duration: 10s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+#moving-div h3{
+    font-family: Founders Grotesk Regular;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    padding: 0 2vw;
+}
+@keyframes move {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
